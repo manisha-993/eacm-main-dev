@@ -66,6 +66,7 @@ public class Processor implements Runnable {
 	public void initialize() {
 		ConnectionFactory connectionFactory = Context.get().getConnectionFactory();
 		try {
+			Log.i("initialize()");
 			insertPrice = new InsertPrice();
 			updateOverlappingPrices = new UpdateOverlappingPrices();
 			effectiveDate = Context.XML_DATE_FORMAT.parse("9999-12-31");
