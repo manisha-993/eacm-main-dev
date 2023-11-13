@@ -81,6 +81,7 @@ public class Processor implements Runnable {
 				@Override
 				protected void handleDocument(String pricesId, Document document) {
 					if (running) {
+						Log.i("initialize()");
 						if (Log.isLevel(Log.VERBOSE))
 							Log.v("Processing Prices XML: " + pricesId);
 						try {
